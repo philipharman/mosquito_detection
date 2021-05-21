@@ -1,1 +1,1 @@
-web: gunicorn mosquito_app:mosquito_app
+web: gunicorn mosquito_app:app
