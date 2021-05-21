@@ -56,7 +56,7 @@ def plot():
                plot_width=900, plot_height=450,
                match_aspect = True,
                toolbar_location="above",
-               title="Gbongan, Nigeria - March 2021")
+               title="Gbongan, Nigeria - March 26, 2021")
     p.image(image=[img], color_mapper = cmap, x=ul[1], y=br[0], dw=dw, dh=dh)
     color_bar = ColorBar(color_mapper=cmap,label_standoff=12, border_line_color='#2F2F2F',
                          border_line_width = 8,location=(0,0))
