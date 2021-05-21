@@ -1,1 +1,1 @@
-web: sh python run mosquito_app.py
+web: sh python mosquito_app.py
