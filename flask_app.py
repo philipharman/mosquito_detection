@@ -1,14 +1,11 @@
 # Flask application
 
 import json
-from flask import Flask
 from jinja2 import Template
 from bokeh.embed import json_item
 from bokeh.plotting import figure
 from bokeh.resources import CDN
-import os
 
-app = Flask(__name__)
 page = Template("""
 <!DOCTYPE html>
 <html lang="en">
@@ -25,11 +22,9 @@ page = Template("""
 </body>
 """)
 
-@app.route('/')
 def root():
     return page.render(resources=CDN.render())
 
-@app.route('/plot')
 def plot():
     import numpy as np
     from bokeh.plotting import figure, show
@@ -85,8 +80,5 @@ def plot():
 
     return json.dumps(json_item(p, "myplot"))
 
-host = "0.0.0.0"
-port = 80
-
-if __name__ == '__main__':
-    app.run(host=host, port=port)
+root()
+plot()
