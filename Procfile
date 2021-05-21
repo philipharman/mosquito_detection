@@ -1,1 +1,1 @@
-web: python mosquito_app.py
+web: gunicorn mosquito_app:mosquito_app
