@@ -2,5 +2,5 @@ numpy==1.19.4
 flask==1.1.2
 jinja2==2.11.2
 bokeh==2.3.2
-
+gunicorn==20.1.0
 # Note: Json is built in
