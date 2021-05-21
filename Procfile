@@ -1,1 +1,1 @@
-web: sh setup.sh && python3 run mosquito_app.py
+web: python3 run mosquito_app.py
